@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
     <>
       <h1>My HomePage</h1>
       <p>
-        Go to <a href="/products"> the list of products</a>
+        Go to <Link to="/products"> the list of products</Link>
       </p>
     </>
   );
