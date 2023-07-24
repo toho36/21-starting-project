@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 function ProductDetailPage() {
   const params = useParams();
@@ -8,6 +8,11 @@ function ProductDetailPage() {
       ProductDetails
       <p>{params.productId}</p>
       {/* //identifier we defined in routes */}
+      <p>
+        <Link to=".." relative="path">
+          Back
+        </Link>
+      </p>
     </div>
   );
 }
